@@ -16,6 +16,7 @@ export default new Router({
       name: 'Todoform',
 
       component: () => import('../views/TodoForm.vue')
+      // 최적화를 위해 코드 스플릿 처리는 좋은 방법인 것 같습니다.
     }
   ]
 })

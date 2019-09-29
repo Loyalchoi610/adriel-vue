@@ -68,6 +68,8 @@
       },
       moveTodoItem: function (type,index) {
         let todoItem = this.$store.state[type][index]
+         // 컴포넌트내부에서 vuex 관련 데이터(state, action, mutation..)을 가져올때는
+        // vuex에서 mapGetters, mapActions 등을 활용해주시면 더 좋습니다.
         this.$store.dispatch('updateTodo',{todoItem, index}).then()
       },
     },
